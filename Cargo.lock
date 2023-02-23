@@ -430,29 +430,28 @@ dependencies = [
 [[package]]
 name = "aurora-engine"
 version = "2.8.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "aurora-engine-precompiles",
  "aurora-engine-sdk",
  "aurora-engine-transactions",
  "aurora-engine-types",
- "base64 0.13.1",
  "bitflags",
  "borsh",
  "byte-slice-cast 1.2.2",
  "ethabi",
  "evm",
  "hex",
- "rjson",
  "rlp 0.5.2",
  "serde",
+ "serde_json",
  "wee_alloc",
 ]
 
 [[package]]
 name = "aurora-engine-precompiles"
 version = "1.0.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "aurora-engine-sdk",
  "aurora-engine-types",
@@ -471,9 +470,10 @@ dependencies = [
 [[package]]
 name = "aurora-engine-sdk"
 version = "1.0.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "aurora-engine-types",
+ "base64 0.21.0",
  "borsh",
  "sha2 0.10.6",
  "sha3",
@@ -482,7 +482,7 @@ dependencies = [
 [[package]]
 name = "aurora-engine-transactions"
 version = "1.0.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "aurora-engine-precompiles",
  "aurora-engine-sdk",
@@ -495,12 +495,13 @@ dependencies = [
 [[package]]
 name = "aurora-engine-types"
 version = "1.0.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "borsh",
  "hex",
  "primitive-types 0.12.1",
  "serde",
+ "serde_json",
 ]
 
 [[package]]
@@ -980,6 +981,12 @@ name = "base64"
 version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8"
+
+[[package]]
+name = "base64"
+version = "0.21.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4a4ddaa51a5bc52a6948f74c06d20aaaddb71924eab79b8c97a8c556e942d6a"
 
 [[package]]
 name = "bincode"
@@ -2040,14 +2047,13 @@ dependencies = [
 [[package]]
 name = "engine-standalone-storage"
 version = "0.1.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "aurora-engine",
  "aurora-engine-precompiles",
  "aurora-engine-sdk",
  "aurora-engine-transactions",
  "aurora-engine-types",
- "base64 0.13.1",
  "borsh",
  "evm-core",
  "hex",
@@ -2060,7 +2066,7 @@ dependencies = [
 [[package]]
 name = "engine-standalone-tracing"
 version = "0.1.0"
-source = "git+https://github.com/aurora-is-near/aurora-engine.git?rev=6dd8b6f70019600a2431446b0d259e8528a26716#6dd8b6f70019600a2431446b0d259e8528a26716"
+source = "git+ssh://git@github.com/aurora-is-near/aurora-engine-private.git?rev=0f5fd9078f8f5d12a3f95f3ead451815067e8d9b#0f5fd9078f8f5d12a3f95f3ead451815067e8d9b"
 dependencies = [
  "aurora-engine-types",
  "evm",
@@ -5712,11 +5718,6 @@ checksum = "bd124222d17ad93a644ed9d011a40f4fb64aa54275c08cc216524a9ea82fb09f"
 dependencies = [
  "digest 0.10.6",
 ]
-
-[[package]]
-name = "rjson"
-version = "0.3.2"
-source = "git+https://github.com/aurora-is-near/rjson?rev=cc3da949#cc3da9495e7e520900d66d2b517539f74fff93cf"
 
 [[package]]
 name = "rkyv"
